@@ -1,0 +1,59 @@
+
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name ="viewport" content="width= device-width, initial-scale=1.0">
+<title>User Login</title>
+<link rel ="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="admin_style.css">
+</head>
+
+
+
+
+<body>
+
+
+
+</body>
+
+<div class="form-container">
+
+<form action="admin_login.php" method="post" autocomplete="off">
+<h2>Login Now</h2>
+<div class = "box">
+<input type ="text" name ="email" maxlength="20" required placeholder="Enter username" oninput="this.value = this.value.replace(/\s/g, '')" value="admins">
+<span>Username</span>
+<i></i>
+</div>
+
+<div class="box">
+<input type ="password"name ="pass"maxlength ="20" required placeholder="Enter password"oninput="this.value = this.value.replace(/\s/g, '')" value="developers">
+<span>Password</span>
+<i></i>
+</div>
+
+<div class="links">
+<a href="#">Don't have account?</a>
+<a href="#" class ="option-btn">Signup</a>
+</div>
+
+<input type="submit"value="Login now" name="submit" class="btn">
+
+</form>
+
+
+</div>
+<script src="script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+

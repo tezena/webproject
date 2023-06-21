@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font-awsome/css/all.min.css" />
+    <script src="jquery-3.2.1.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two|Pacifico');
+  </style>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <head>
+      <div class="navbar">
+      <div class="logos">
+        <img src="images/logo.png" alt="Logo 1">
+      </div>
+      
+      
+      <div class="Links" >
+        <span   class="menu">Category
+          <ul class="menu-dropdown">
+           <li><a href="C:\Users\us\Documents\web development\GroupProject\GroupProject\phonesPage.html" class="aaa">Phones</a> </li>
+           <li>  <a href="C:\Users\us\Documents\web development\GroupProject\GroupProject\phonesPage.html" class="aaa">Laptops</a></li>
+           <li> <a href="C:\Users\us\Documents\web development\GroupProject\GroupProject\phonesPage.html"class="aaa">Home Alience</a></li>
+          </ul>
+        </span>
+        <a class="aa" href="C:\Users\us\Documents\web development\GroupProject\GroupProject\index.html">Home</a>
+        <a  class="aa"href="C:\Users\us\Documents\web development\GroupProject\GroupProject\about.html">About</a>
+        <a class="aa"href="#Cart">Cart</a>
+        <a class="aa" href="C:\Users\us\Documents\web development\GroupProject\GroupProject\admin.html">Login</a>
+      </div>
+
+
+    </div>
+    </head>
+    <h1 class="conta-we"> we would like to hear you...</h1>
+    <div class="conta-container all-conta">
+
+      <div class="conta-form-div">
+        <div class="conta-contact-info">
+          <h3 class="conta-title">Let's get in touch</h3>
+          <p class="conta-text">
+            Looking for the latest electronics at the best prices? Look no further than our
+            online electronics store! From cutting-edge gadgets to must-have accessories,
+             we have everything you need to stay connected and entertained.
+             Plus, with our easy-to-use website and fast, reliable shipping,
+             shopping for tech has never been easier. Contact us today to learn
+            more about our selection and take advantage of our unbeatable deals!
+          </p>
+
+          <div class="conta-info">
+            <div class="conta-information">
+
+              <p>Addis Ababa, Adwa Street</p>
+            </div>
+            <div class="conta-information">
+
+              <p>aaucscstudent2023@gmail.com</p>
+            </div>
+            <div class="conta-information">
+
+              <p>+251...</p>
+            </div>
+          </div>
+
+          <div class="conta-social-media">
+            <p>Connect with us :</p>
+            <div class="conta-social-icons">
+              <a href="#">
+                <i class="conta-fab conta-fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="conta-fab conta-fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="conta-fab conta-fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="conta-fab conta-fa-linkedin-in"></i>
+              </a>
+            </div><br>
+            <div class="conta-credit">Made with <span style="color:tomato">❤</span> by <a href="index.html">Addis Ababa University Computer Science Student 2023</a></div>
+          </div>
+        </div>
+
+        <div class="conta-contact-form all-conta">
+          <span class="conta-circle conta-one"></span>
+          <span class="conta-circle conta-two"></span>
+
+          <form action="contact.html" autocomplete="off" class="conta-form">
+            <h3 class="conta-title">Contact us</h3>
+            <div class="conta-input-container">
+              <input type="text" name="name" class="conta-input" />
+              <label for="">Username</label>
+              <span class="spannn">Username</span>
+            </div>
+            <div class="conta-input-container">
+              <input type="email" name="email" class="conta-input" />
+              <label for="">Email</label>
+              <span class="spannn">Email</span>
+            </div>
+            <div class="conta-input-container">
+              <input type="tel" name="phone" class="conta-input" />
+              <label for="">Phone</label>
+              <span class="spannn">Phone</span>
+            </div>
+            <div class="conta-input-container textarea">
+              <textarea name="message" class="conta-input conta-textarea"></textarea>
+              <label for="">Message</label>
+              <span class="spannn">Message</span>
+            </div>
+            <input type="submit" value="Send" class="conta-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-icons">
+        <a href="#"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    
+      </div>
+      <div class="copyright">
+        <span >
+          &copy; 2023 ALFA SHOPING. All rights reserved.
+        </span>
+      </div>
+    </footer>
+
+    <script >
+      const inputs = document.querySelectorAll(".conta-input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+    </script>
+  </body>
+</html>

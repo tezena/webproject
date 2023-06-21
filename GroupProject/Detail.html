@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="font-awsome/css/all.min.css" />
+    </head>
+    <body>
+      <head>
+        <div class="navbar">
+        <div class="logos">
+          <img src="images/logo.png" alt="Logo 1">
+        </div>
+        <div class="search-bar">
+                <div class="search-icon">
+                   <i class="fas fa-search"></i>
+                </div>
+  
+            <input
+                   type="search"
+                    name="search"
+                    placeholder="search"
+                     autoComplete="of"
+                     aria-label="search"  />
+        </div>
+        
+        <div class="Links" >
+          <span   class="menu">Category
+            <ul class="menu-dropdown">
+             <li><a href="C:\Users\us\Documents\web development\GroupProject\GroupProject\phonesPage.html" class="aaa">Phones</a> </li>
+             <li>  <a href="C:\Users\us\Documents\web development\GroupProject\GroupProject\phonesPage.html" class="aaa">Laptops</a></li>
+             <li> <a href="C:\Users\us\Documents\web development\GroupProject\GroupProject\phonesPage.html"class="aaa">Home Alience</a></li>
+            </ul>
+          </span>
+          <a class="aa" href="C:\Users\us\Documents\web development\GroupProject\GroupProject\index.html">Home</a>
+          <a  class="aa"href="C:\Users\us\Documents\web development\GroupProject\GroupProject\about.html">About</a>
+          <a class="aa"href="C:\Users\us\Documents\web development\GroupProject\GroupProject\Contact.html">Contact</a>
+          <a class="aa"href="C:\Users\us\Documents\web development\GroupProject\GroupProject\Cart.html">Cart</a>
+          <a class="aa" href="C:\Users\us\Documents\web development\GroupProject\GroupProject\admin.html">Login</a>
+        </div>
+  
+  
+      </div>
+      </head>
+  
+          <main  id="DetailMain">
+            <div id="productDetail">
+              
+              
+            </div>
+          </main>
+          <footer>
+            <div class="footer-icons">
+              <a href="#"><i class="fas fa-home"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          
+            </div>
+            <div class="copyright">
+              <span >
+                &copy; 2023 ALFA SHOPING. All rights reserved.
+              </span>
+            </div>
+          </footer>
+        
+        <script src="../Backend/admin/Detail.js" ></script>
+
+
+
+        <!-- <script>
+
+  
+         // Get the query parameter from the URL
+         const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('cardId');
+            var index=products[productId];
+
+
+   const proDOM=document.getElementById("productDetail");
+
+class Product {
+ async getProducts() {
+   let response = await fetch('http://localhost/fullstack/Backend/admin/api.php');
+
+   if(response.ok) {
+     let data = await response.json();
+     let products = data.data;
+
+     products = products.map(item=> {
+       const id = item.id;
+       const product_name = item.product_name;
+       const product_image = item.product_image;
+       const price = item.price;
+       const description = item.description;
+       const type = item.type;
+       return {id,product_name, product_image, price, description, type};
+     })
+    
+     return products;
+   } else {
+     console.log('error', response.status);
+   }
+ }
+}
+
+class UI {
+
+ 
+ displayDetail(product){
+   let out = '';
+   
+     out += `<div id="proImage" class="proImage">
+      <img src="../Backend/images/product/${product.product_image}" >
+              </div>
+              <div>
+                <div id="proDetailText" class="proText">
+                <h1>${product.product_name}</h1>
+                <pre>${product.description}</pre>
+                </div>
+                <button class="addToCartBtn" onclick="increment(id)">Add to Cart</button>
+              </div>`;
+   
+   proDOM.innerHTML = out;
+ }
+
+
+}
+
+let selectedpro;
+
+document.addEventListener('DOMContentLoaded', () => {
+ const product = new Product();
+ const ui = new UI();
+ 
+ product.getProducts().then(products =>{
+   products.forEach(product=>{
+       if(product.id == index){
+    
+        selectedpro=product;
+        
+     
+   }});
+  
+   ui.displayDetail(selectedpro);
+   });
+});
+
+
+         
+            // var proImage=document.getElementById("");
+            
+            // var pic=document.createElement('img');
+            //       pic.src=product.image;
+
+            //       proImage.appendChild(pic);
+            //       console.log(proImage);
+
+
+            // var proText=document.getElementById("proDetailText");
+          
+            //  var proName=document.createElement("h1");
+            //        proName.innerHTML=product.name;
+            //  var  proDetail=document.createElement("pre");
+            //         proDetail.innerHTML=product.productDescription;   
+                    
+            //    proText.appendChild(proName);
+            //    proText.appendChild(proDetail); 
+               
+               
+               
+               
+           
+            // Perform additional actions based on the cardId
+
+
+  //           let basket = JSON.parse(localStorage.getItem("data")) || [];
+  //           let increment = (id) => {
+  // let selectedItem = id;
+  // let search = basket.find((x) => x.id === selectedItem.id);
+
+  // if (search === undefined) {
+  //   basket.push({
+  //     id: selectedItem.id,
+  //     item: 1,
+  //   });
+  // } else {
+  //   search.item += 1;
+  // }
+
+  // generateCartItems();
+  // update(selectedItem.id);
+  // localStorage.setItem("data", JSON.stringify(basket));
+
+        </script> -->
+    </body>
+</html>
